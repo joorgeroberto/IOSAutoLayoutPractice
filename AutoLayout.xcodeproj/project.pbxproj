@@ -16,6 +16,7 @@
 		934956D427583D35002ACD8F /* AutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934956D327583D35002ACD8F /* AutoLayoutTests.swift */; };
 		934956DE27583D35002ACD8F /* AutoLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934956DD27583D35002ACD8F /* AutoLayoutUITests.swift */; };
 		934956E027583D35002ACD8F /* AutoLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934956DF27583D35002ACD8F /* AutoLayoutUITestsLaunchTests.swift */; };
+		934956ED275851C2002ACD8F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934956EC275851C2002ACD8F /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		934956D927583D35002ACD8F /* AutoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		934956DD27583D35002ACD8F /* AutoLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutUITests.swift; sourceTree = "<group>"; };
 		934956DF27583D35002ACD8F /* AutoLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		934956EC275851C2002ACD8F /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				934956C527583D35002ACD8F /* Assets.xcassets */,
 				934956C727583D35002ACD8F /* LaunchScreen.storyboard */,
 				934956CA27583D35002ACD8F /* Info.plist */,
+				934956EC275851C2002ACD8F /* UIView.swift */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934956ED275851C2002ACD8F /* UIView.swift in Sources */,
 				934956C127583D34002ACD8F /* ViewController.swift in Sources */,
 				934956BD27583D34002ACD8F /* AppDelegate.swift in Sources */,
 				934956BF27583D34002ACD8F /* SceneDelegate.swift in Sources */,
