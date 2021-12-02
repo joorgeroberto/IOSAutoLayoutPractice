@@ -20,15 +20,23 @@ class ViewController: UIViewController {
         view.addSubview(blueView)
         blueView.backgroundColor = .blue
         
-        let stackView: UIStackView = UIStackView(arrangedSubviews: [redView, blueView])
+        let yellowView = UIView()
+        view.addSubview(yellowView)
+        yellowView.backgroundColor = .yellow
+        
+        let horizontalStackView: UIStackView = UIStackView(arrangedSubviews: [redView, blueView])
+        let stackView: UIStackView = UIStackView(arrangedSubviews: [horizontalStackView, yellowView])
         
         view.addSubview(stackView)
         stackView.distribution = .fillEqually
+        horizontalStackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        stackView.axis = .vertical
     }
     
     
