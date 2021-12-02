@@ -9,7 +9,14 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func fill(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, trailing: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, padding: UIEdgeInsets = .zero)  {
+    func fill(
+        top: NSLayoutYAxisAnchor?,
+        leading: NSLayoutXAxisAnchor?,
+        trailing: NSLayoutXAxisAnchor?,
+        bottom: NSLayoutYAxisAnchor?,
+        padding: UIEdgeInsets = .zero,
+        size: CGSize = .zero
+    )  {
         translatesAutoresizingMaskIntoConstraints = false
         if let top = top {
             topAnchor.constraint(equalTo: top, constant: padding.top).isActive = true
@@ -25,6 +32,14 @@ extension UIView {
         
         if let bottom = bottom {
             bottomAnchor.constraint(equalTo: bottom, constant: -padding.bottom).isActive = true
+        }
+        
+        if size.width != 0 {
+            widthAnchor.constraint(equalToConstant: size.width).isActive = true
+        }
+        
+        if size.height != 0 {
+            heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
          
     }

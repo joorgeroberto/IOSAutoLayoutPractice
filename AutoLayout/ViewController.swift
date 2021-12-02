@@ -19,15 +19,16 @@ class ViewController: UIViewController {
         redView.fill(
             top: view.topAnchor,
             leading: view.leadingAnchor,
-            trailing: view.trailingAnchor,
-            bottom: view.bottomAnchor,
+            trailing: nil,
+            bottom: nil,
             padding:
                     .init(
                         top: 50,
                         left: 30,
                         bottom: 100,
                         right: 30
-                    )
+                    ),
+            size: .init(width: 200, height: 500)
         )
     }
     
