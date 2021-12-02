@@ -43,4 +43,14 @@ extension UIView {
         }
          
     }
+    
+    func fillSuperView(padding: UIEdgeInsets = .zero) {
+        fill(
+            top: superview?.topAnchor,
+            leading: superview?.leadingAnchor,
+            trailing: superview?.trailingAnchor,
+            bottom: superview?.bottomAnchor,
+            padding: padding
+        )
+    }
 }
