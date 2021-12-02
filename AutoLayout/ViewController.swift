@@ -16,7 +16,9 @@ class ViewController: UIViewController {
         view.addSubview(redView)
         redView.backgroundColor = .red
         
-        redView.fillSuperView(padding: .init(top: 50, left: 50, bottom: 50, right: 50))
+        //redView.fillSuperView(padding: .init(top: 50, left: 50, bottom: 50, right: 50))
+        
+        redView.centerSuperView(size: .init(width: 200, height: 200))
         
     }
     
