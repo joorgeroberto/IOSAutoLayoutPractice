@@ -20,21 +20,15 @@ class ViewController: UIViewController {
         view.addSubview(blueView)
         blueView.backgroundColor = .blue
         
-        redView.translatesAutoresizingMaskIntoConstraints = false
-        redView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        redView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        //redView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        redView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        let stackView: UIStackView = UIStackView(arrangedSubviews: [redView, blueView])
         
-        redView.widthAnchor.constraint(equalToConstant: view.bounds.width / 2).isActive = true
-        
-        
-        blueView.translatesAutoresizingMaskIntoConstraints = false
-        blueView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        blueView.leadingAnchor.constraint(equalTo: redView.trailingAnchor).isActive = true
-        blueView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        blueView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
+        view.addSubview(stackView)
+        stackView.distribution = .fillEqually
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
     
